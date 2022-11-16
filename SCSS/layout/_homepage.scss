@@ -1,0 +1,28 @@
+* {
+    @include origin;
+}
+
+.homepage-section {
+    background-image: url(/assets/background-homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .logoHome {
+        width: 300px;
+    }
+
+    .homepage-title {
+        text-align: center;
+        color: whitesmoke;
+        margin: 0 auto;
+        width: 55%;
+        font-size: 46px;
+        font-family: $fontHome;
+    }
+}

@@ -1,0 +1,38 @@
+@keyframes float {
+  0% {
+    -webkit-transform:translate(600px, 350px) rotate(0deg) translate(-250px, -250px) rotate(0deg);
+}  
+  13% {
+      -webkit-transform:translate(600px, 350px) rotate(45deg) translate(-250px, -250px) rotate(0deg);
+  }
+  25% {
+    -webkit-transform:translate(600px, 350px) rotate(90deg) translate(-250px, -250px) rotate(0deg);
+  }
+  38% {
+    -webkit-transform:translate(600px, 350px) rotate(135deg) translate(-250px, -250px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform:translate(600px, 350px) rotate(180deg) translate(-250px, -250px) rotate(0deg);
+  }
+  63% {
+    -webkit-transform:translate(600px, 350px) rotate(225deg) translate(-250px, -250px) rotate(0deg);
+  }
+  75% {
+    -webkit-transform:translate(600px, 350px) rotate(270deg) translate(-250px, -250px) rotate(0deg);
+  }
+  88% {
+    -webkit-transform:translate(600px, 350px) rotate(315deg) translate(-250px, -250px) rotate(0deg);
+  }
+  100% {
+      -webkit-transform:translate(600px, 350px) rotate(360deg) translate(-250px, -250px) rotate(0deg);
+  }
+}
+
+.starship {
+position: absolute;
+top: 20%;
+}
+
+.float-ease-in-out {
+    animation: float 20s infinite linear;
+}
