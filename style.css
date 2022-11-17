@@ -60,12 +60,14 @@ body {
 }
 
 .homepage-section {
+  position: absolute;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 .homepage-section .logoHome {
   width: 300px;
@@ -77,6 +79,11 @@ body {
   width: 55%;
   font-size: 46px;
   font-family: "Kanit", sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .homepage-section .homepage-title {
+    width: 90%;
+  }
 }
 .homepage-section .button {
   position: relative;
@@ -90,10 +97,22 @@ body {
   padding: 1em 1.5em;
   text-decoration: none;
   transform: skewX(-30deg);
+  transition: 0.5s all;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  font-family: "Kanit", sans-serif;
 }
 .homepage-section .button span {
   display: block;
   transform: skew(30deg);
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.homepage-section .button:hover {
+  background-color: whitesmoke;
+}
+.homepage-section .button:hover span {
+  color: black;
 }
 .homepage-section .button.type1 {
   color: whitesmoke;
@@ -105,7 +124,7 @@ body {
   width: 20%;
   height: 20%;
   border: 2px solid;
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
   border-radius: 2px;
 }
 .homepage-section .button.type1.type1::after {
@@ -129,6 +148,15 @@ body {
 .homepage-section .button.type1.type1:hover:after, .homepage-section .button.type1.type1:hover:before {
   width: 100%;
   height: 100%;
+}
+.homepage-section .labelForm {
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  margin-top: 50px;
+}
+.homepage-section input {
+  margin-top: 10px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
