@@ -18,6 +18,6 @@ function nextParaph() {
         buttonSpan.innerHTML = "Commencer"
     }
     if (buttonVal == 4) {
-        button.href = "javascript:runProgram()"
+        button.href = ""
     }
 }
