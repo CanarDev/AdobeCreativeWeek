@@ -216,6 +216,63 @@
   /* Merci kléklé ->  https://github.com/ClemOurs */
 }
 
+.enigma-visual {
+  background-image: url(/assets/bg-crea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.enigma-visual .wyntd-enigma {
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  font-size: 22px;
+}
+.enigma-visual .img-enigma-kfc {
+  z-index: 3;
+}
+.enigma-visual .containerKFCBox {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.enigma-visual .containerKFCBox .boxColor {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  z-index: 3;
+}
+.enigma-visual .containerKFCBox .borderSelected {
+  border-color: green;
+}
+.enigma-visual .containerKFCBox .boxColor:hover {
+  border-color: white;
+}
+.enigma-visual .containerKFCBox .boxColor:focus-within {
+  border-color: green;
+}
+.enigma-visual .containerKFCBox .boxColor:nth-child(1) {
+  background-color: #91070b;
+}
+.enigma-visual .containerKFCBox .boxColor:nth-child(2) {
+  background-color: #A3080C;
+}
+.enigma-visual .containerKFCBox .boxColor:nth-child(3) {
+  background-color: #a8070c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* Merci kléklé ->  https://github.com/ClemOurs */
+}
+
 .body-com {
   background-color: #252942;
   height: 100vh;

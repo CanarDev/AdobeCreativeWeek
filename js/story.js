@@ -18,6 +18,7 @@ function nextParaph() {
         buttonSpan.innerHTML = "Commencer"
     }
     if (buttonVal == 4) {
+        //TODO Popup "open the game"
         button.href = "javascript:runProgram()"
     }
 }
