@@ -1,0 +1,36 @@
+* {
+    @include origin;
+}
+.body-dev {
+    background-color: rgb(16, 16, 16);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .picturehomedev {
+        width: 150px;
+        z-index: 3;
+    }
+
+    .dev-title {
+        z-index: 3;
+        text-align: center;
+        color: whitesmoke;
+        margin: 0 auto;
+        width: 75%;
+        font-size: 30px;
+        font-family: $fontHome;
+        margin-top: 50px;
+        @include xl {
+            width: 90%;
+        }
+    }
+
+    .decodev {
+        position: absolute;
+        width: 70vw;
+    }
+}
