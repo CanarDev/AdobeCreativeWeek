@@ -44,6 +44,72 @@
   height: 100%;
 }
 
+.button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin-top: 100px;
+  display: block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  transform: skewX(-30deg);
+  transition: 0.5s all;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  font-family: "Kanit", sans-serif;
+  z-index: 3;
+}
+.button span {
+  display: block;
+  transform: skew(30deg);
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.button:hover {
+  background-color: whitesmoke;
+}
+.button:hover span {
+  color: black;
+}
+.button.type1 {
+  color: whitesmoke;
+}
+.button.type1.type1::after, .button.type1.type1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.5s ease;
+  border-radius: 2px;
+}
+.button.type1.type1::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 13px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: whitesmoke;
+  border-right-color: whitesmoke;
+}
+.button.type1.type1::before {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 13px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: whitesmoke;
+  border-left-color: whitesmoke;
+}
+.button.type1.type1:hover:after, .button.type1.type1:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -51,7 +117,7 @@
   /* Merci kléklé ->  https://github.com/ClemOurs */
 }
 
-body {
+.body-homepage {
   background-image: url(/assets/background-homepage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,70 +151,6 @@ body {
     width: 90%;
   }
 }
-.homepage-section .button {
-  position: relative;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  font-size: 18px;
-  margin-top: 100px;
-  display: block;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  transform: skewX(-30deg);
-  transition: 0.5s all;
-  border-top-left-radius: 13px;
-  border-bottom-right-radius: 13px;
-  font-family: "Kanit", sans-serif;
-}
-.homepage-section .button span {
-  display: block;
-  transform: skew(30deg);
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-.homepage-section .button:hover {
-  background-color: whitesmoke;
-}
-.homepage-section .button:hover span {
-  color: black;
-}
-.homepage-section .button.type1 {
-  color: whitesmoke;
-}
-.homepage-section .button.type1.type1::after, .homepage-section .button.type1.type1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20%;
-  height: 20%;
-  border: 2px solid;
-  transition: all 0.5s ease;
-  border-radius: 2px;
-}
-.homepage-section .button.type1.type1::after {
-  bottom: 0;
-  right: 0;
-  border-bottom-right-radius: 13px;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: whitesmoke;
-  border-right-color: whitesmoke;
-}
-.homepage-section .button.type1.type1::before {
-  top: 0;
-  left: 0;
-  border-top-left-radius: 13px;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  border-top-color: whitesmoke;
-  border-left-color: whitesmoke;
-}
-.homepage-section .button.type1.type1:hover:after, .homepage-section .button.type1.type1:hover:before {
-  width: 100%;
-  height: 100%;
-}
 .homepage-section .labelForm {
   color: whitesmoke;
   font-family: "Kanit", sans-serif;
@@ -157,6 +159,78 @@ body {
 .homepage-section input {
   margin-top: 10px;
   width: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* Merci kléklé ->  https://github.com/ClemOurs */
+}
+
+.body-com {
+  background-color: #252942;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-com .socialmediaImg {
+  z-index: 3;
+}
+.body-com .com-title {
+  z-index: 3;
+  text-align: center;
+  color: whitesmoke;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .body-com .com-title {
+    width: 90%;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* Merci kléklé ->  https://github.com/ClemOurs */
+}
+
+.body-crea {
+  background-image: url(/assets/bg-crea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-crea .imgCreaBottomHome {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+}
+.body-crea .crea-title {
+  text-align: center;
+  color: whitesmoke;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .body-crea .crea-title {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
