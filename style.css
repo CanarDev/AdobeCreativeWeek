@@ -216,6 +216,10 @@
   /* Merci kléklé ->  https://github.com/ClemOurs */
 }
 
+.centeredElements {
+  justify-content: center !important;
+}
+
 .enigma-visual {
   background-image: url(/assets/bg-crea.png);
   background-repeat: no-repeat;
@@ -264,6 +268,51 @@
 }
 .enigma-visual .containerKFCBox .boxColor:nth-child(3) {
   background-color: #a8070c;
+}
+.enigma-visual .containerCoca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.enigma-visual .containerCoca img {
+  width: 450px;
+  padding: 1em 2em;
+  border: 2px solid transparent;
+  z-index: 3;
+  border-radius: 10px;
+}
+.enigma-visual .containerCoca .borderSelected {
+  border-color: green;
+}
+.enigma-visual .containerCoca img:hover {
+  border-color: white;
+}
+.enigma-visual .containerCoca img:focus-within {
+  border-color: green;
+}
+.enigma-visual .Chupacontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.enigma-visual .Chupacontainer p {
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  padding: 1em 2em;
+  border: 2px solid transparent;
+  z-index: 3;
+}
+.enigma-visual .Chupacontainer .borderSelected {
+  border-color: green;
+}
+.enigma-visual .Chupacontainer p:hover {
+  border-color: white;
+}
+.enigma-visual .Chupacontainer p:focus-within {
+  border-color: green;
 }
 
 * {
