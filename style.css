@@ -430,6 +430,10 @@
   color: greenyellow;
   font-size: 20px;
 }
+.enigma-mathemos .key {
+  position: absolute;
+  z-index: 4;
+}
 
 * {
   padding: 0;
