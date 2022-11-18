@@ -435,6 +435,19 @@
   z-index: 4;
 }
 
+.fullstack {
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+  border: 3px solid greenyellow;
+  width: 200px;
+  height: 50px;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -9,8 +9,8 @@ if (validate) {
         manyTimes += 1
         console.log(enigma1[1].value)
         if (enigma1[0].value === "b") {
-            if (enigma1[1].value === "c") {
-                if (enigma1[2].value === "a") {
+            if (enigma1[1].value === "a") {
+                if (enigma1[2].value === "c") {
                     alert("Tu as trouvé la bonne combinaison !! dommage que tu t'y soit prit à " + manyTimes + " fois")
                     validate.href = "/humano-enigma3.html"
                 }else{
