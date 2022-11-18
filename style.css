@@ -315,6 +315,122 @@
   border-color: green;
 }
 
+.enigma-humano {
+  background-color: #252942;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.enigma-humano .wyntd-enigma {
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  z-index: 3;
+}
+.enigma-humano .socials {
+  z-index: 3;
+}
+.enigma-humano .personnasSocial {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 3;
+}
+.enigma-humano .personnasSocial div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.enigma-humano .personnasSocial div input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #11A4DB;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.enigma-humano .socialsPersona {
+  width: 70%;
+}
+.enigma-humano .personnasTransport {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+.enigma-humano .personnasTransport img {
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  z-index: 3;
+}
+.enigma-humano .personnasTransport .borderSelected {
+  border-color: green;
+}
+.enigma-humano .personnasTransport img:hover {
+  border-color: white;
+}
+.enigma-humano .personnasTransport img:focus-within {
+  border-color: green;
+}
+
+.enigma-mathemos {
+  background-color: rgb(16, 16, 16);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.enigma-mathemos .picturehomedev {
+  width: 150px;
+  z-index: 3;
+}
+.enigma-mathemos .dev-title {
+  z-index: 3;
+  text-align: center;
+  color: whitesmoke;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .enigma-mathemos .dev-title {
+    width: 90%;
+  }
+}
+.enigma-mathemos .decodev {
+  position: absolute;
+  width: 70vw;
+}
+.enigma-mathemos .keyEnigma {
+  z-index: 3;
+  position: absolute;
+}
+.enigma-mathemos .keyEnigmaInputs {
+  display: flex;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  z-index: 3;
+  gap: 10px;
+}
+.enigma-mathemos .keyEnigmaInputs input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid greenyellow;
+  width: 50px;
+  color: greenyellow;
+  font-size: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
