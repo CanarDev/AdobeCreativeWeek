@@ -24,7 +24,7 @@ if (validate) {
         manyTimes += 1
         console.log(topInput.value)
         if (topInput.value == 400) {
-            if (leftInput.value == 550) {
+            if (leftInput.value == 670) {
                 alert("Tu as trouvé dévérouillé la serrure au bout de " + manyTimes + " fois!!")
                 validate.href = "/mathemos-enigma3.html"
             }
